@@ -1,0 +1,76 @@
+* {
+      padding: 0;
+      margin: 0;
+}
+header {
+      text-align: center;
+      border: solid 1px rgb(85, 255, 70);
+      border-radius: 10px;
+      background-color: rgb(85, 255, 70);
+      margin: 20px;
+      padding: 10px;
+}
+.contenedor__padre{
+      text-align: center;
+      max-width: 1100px;
+      margin: auto;
+}
+
+.contenedor__hijo__dos{
+      display: flex;
+}
+.tipo, .antiguedad, .codigo_fincaraiz, .sector__item, .garaje, .barrio__item, .precio__item, .estado, .metros__item{
+      
+      margin: 5px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+}
+.habitacion, .baños, .garaje, .estracto{
+     
+      display: flex;
+      justify-content: center;
+      margin: 5px;
+}
+.habitacion p, .baños p, .estracto p{
+      margin: auto 10px;
+}
+.descripcion__item{
+      border: solid;
+      padding: 10px;
+
+}
+.descripcion__item input{
+      width: 800px;
+      height: 100px;
+}
+.caracter__internas__item, .caracter__sector__item, .caracter__externas__item{
+      border: solid;
+      padding: 10px;
+}
+.caracter__internas__item input, .caracter__sector__item input, .caracter__externas__item input{
+      width: 200px;
+      height: 20px;
+      margin: 10px 40px;
+
+}
+.boton{
+      margin: 40px;
+      padding: 10px;
+}
+.infoBase, .infonumber{
+      width: 400px;
+      border: solid;
+      margin: auto;
+      display: block;
+}
+.tipo, .sector__item, .barrio__item, .precio__item, .metros__item, .estado{
+      width: 300px;
+      display: flex;
+      margin: auto;
+}
+.inter{
+      border: solid;
+      display: flex;
+      justify-content: center;
+}
