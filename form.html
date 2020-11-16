@@ -7,13 +7,189 @@
       <link rel="stylesheet" href="css/estilosform.css">
 </head>
 <body>
-      <header>Registro de datos a tabal SQL</header>
-            <section class="contenedor__padre">
-                  <!-- tipo de inmueble-->
-                  <form action="registrar.php" method="POST">
-                        <input type="text" name="tipo" id="tipo" value="">
-                        <input class="boton" type="submit" value="Garduar en Base de Datos">
-                  </form>     
-            </section>
+      <header>
+            <h1>Tabla de Ingreso Datos Inmobiliaria</h1>
+      </header>
+      <section class="contenedor">
+            <form action="regristar.php" metodo="POST">
+
+                  <!--informacion primaria-->
+                  <div class="info__uno">
+                        <!--tipo de inmueble-->
+                        <section class="tipo">
+                        <label for="tipo">Tipo :</label>
+                        <select name="tipo" id="tipo" class="tipoS">
+                          <option value="casa">Casa</option>
+                          <option value="apartamento">Apartamento</option>
+                          <option value="lote">lote</option>
+                          <option value=""></option>
+                        </select>
+                        </section>
+                        
+                        <!--sector del inmueble-->
+                        <section class="sector">
+                              <p>Sector :</p>
+                              <input type="text" class="sectorS" required placeholder="Escribir nombre del sector"> 
+                        </section>
+
+                        <!--nombre del barrio del inmueble-->
+                        <section class="barrio">
+                              <p>Barrio :</p>
+                              <input type="text" class="barrioS" required placeholder="Escribir nombre del barrio"> 
+                        </section>
+
+                        <!--Antiguedad  en años-->
+                        <section class="antiguedad">
+                        <label for="antiguedad">Antiguedad :</label>
+                        <select name="antiguedad" id="antiguedad" class="antiguedadS">
+                          <option value="nueva">1 a 3</option>
+                          <option value="casinueva">4 a 7</option>
+                          <option value="novieja">8 a 11</option>
+                          <option value="vieja">12 y mas</option>
+                        </select>
+                        </section>
+
+                  </div>
+
+                  <!--informacion secudaria-->
+                  <div class="info__dos">
+                        <!--estado del inmueble nuevo / usado-->
+                        <section class="estado">
+                              <label for="estado">Estado :</label>
+                              <select name="estado" id="estado" class="estadoS">
+                              <option value="nueva">nueva</option>
+                              <option value="usada">usada</option>
+                              </select>
+
+                        </section>
+
+                        <!--valor del inmueble, con puntuacion-->
+                        <section class="precio">
+                              <p>Valor de la propiedad :</p>
+                              <input type="text" class="precioS" name="precio" required placeholder="agregar valor con puntuacion">
+                        </section>
+
+                        <!--metros cuadrados en total del inmueble-->
+                        <section class="metros">
+                              <p>Metros cuadrados totales :</p>
+                              <input type="text" class="metrosS" required placeholder="total de metros cuatratos" >
+                        </section>
+
+                        <!--garaje-->
+                        <section class="garaje">
+                              <label for="garaje">Garaje :</label>
+                              <select name="garaje" id="garaje" class="garajeS">
+                              <option value="si">Si</option>
+                              <option value="no">No</option>
+                              </select>
+
+                        </section>
+                  </div>
+
+                  <!---informacion tercera-->
+                  <div class="info__tres">
+                        <div class="info__tres__hijo">
+                              <!--numero de habitacion-->
+                              <section class="habitacion"><label for="habitacion">Habitacion :</label>
+                                    <select name="habitacion" id="habitacion" class="habitacionS">
+                                    <option value="uno">1</option>
+                                    <option value="dos">2</option>
+                                    <option value="tres">3</option>
+                                    <option value="cuatro">4</option>
+                                    <option value="cinco">5</option>
+                                    <option value="seis">6</option>
+                                    <option value="siete">7</option>
+                                    <option value="ocho">8</option>
+                                    <option value="nueve">9</option>
+                                    <option value="diez">10</option>
+                                    </select>
+      
+                              </section>
+      
+                              <!--numero de banos-->
+                              <section class="banos">
+                                    <label for="banos">banos :</label>
+                                    <select name="banos" id="banos" class="banosS">
+                                    <option value="uno">1</option>
+                                    <option value="dos">2</option>
+                                    <option value="tres">3</option>
+                                    <option value="cuatro">4</option>
+                                    </select>
+      
+                              </section>
+
+                              <!--estracto-->
+                              <section class="estracto">
+                                    <label for="estracto">Estracto :</label>
+                                    <select name="estracto" id="estracto" class="estractoS">
+                                    <option value="uno">1</option>
+                                    <option value="dos">2</option>
+                                    <option value="tres">3</option>
+                                    <option value="cuatro">4</option>
+                                    </select>
+      
+                              </section>
+                        </div>
+
+                        <!--descripcion detallada del inmuelble-->
+                        <section class="descripcion">
+                              <textarea name="descripcion" class="descripcionS"  cols="40" row="10" value="Descripcion detallada" >Descripcion detallada del inmueble </textarea>
+                        </section>
+                        
+                  </div>
+
+                  <!--caracteristicas-->
+                  <div class="caracteristicas">
+                        <!--caracteristics internas-->
+                        <section class="internas">
+                              <p>Caracteristicas internas :</p>
+                              <div class="internas1D">
+                                    <input type="text" class="internas1" placeholder="internas1" name="internas1">
+                                    <input type="text" class="internas2" 
+                                    placeholder="internas2" 
+                                    name="internas2">
+                                    <input type="text" class="internas3" placeholder="internas3" name="internas3">
+                                    <input type="text" class="internas4" placeholder="internas4" name="internas4">
+                                    <input type="text" class="internas5" placeholder="internas5" name="internas5">
+                                    <input type="text" class="internas6" placeholder="internas6" name="internas6">
+                              </div>
+                        </section>
+                        <!--caracteristics externas-->
+                        <section class="externas">
+                              <p>Caracteristicas Externas :</p>
+                              <div class="externas1D">
+                                    <input type="text" class="externas1" placeholder="externas1" name="externas1">
+                                    <input type="text" class="externas2" 
+                                    placeholder="externas2" 
+                                    name="externas2">
+                                    <input type="text" class="externas3" placeholder="externas3" name="externas3">
+                                    <input type="text" class="externas4" placeholder="externas4" name="externas4">
+                                    <input type="text" class="externas5" placeholder="externas5" name="externas5">
+                                    <input type="text" class="externas6" placeholder="externas6" name="externas6">
+                              </div>
+                        </section>
+
+                        <!--caracteristics del sector-->
+                        <section class="sector">
+                              <p>Caracteristicas del sector :</p>
+                              <div class="sector1D">
+                                    <input type="text" class="sector1" placeholder="sector1" name="sector1">
+                                    <input type="text" class="sector2" 
+                                    placeholder="sector2" 
+                                    name="sector2">
+                                    <input type="text" class="sector3" placeholder="sector3" name="sector3">
+                                    <input type="text" class="sector4" placeholder="sector4" name="sector4">
+                                    <input type="text" class="sector5" placeholder="sector5" name="sector5">
+                                    <input type="text" class="sector6" placeholder="sector6" name="sector6">
+                              </div>
+                        </section>
+                  </div>
+
+                  <div class="boton">
+                        <input type="submit" class="botonS" name="ingresar datos" value="Guardar en la base de datos">
+                  </div>
+            
+            </form>
+      </section>
 </body>
 </html>

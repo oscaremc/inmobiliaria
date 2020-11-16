@@ -1,5 +1,5 @@
 <?php
-$conexion = mysqli_connect("localhost", "root", "87654321", "inmobiliaria");
+$conexion = mysqli_connect("localhost", "root", "", "inmobiliaria");
 if (!$conexion) {
       echo 'paila';
 } else {
