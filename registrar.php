@@ -52,3 +52,5 @@ if ($conexion->query($insertar) === TRUE) {
 
 //cerar conexion 
 mysqli_close($conexion);
+
+?>
