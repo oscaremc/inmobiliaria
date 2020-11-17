@@ -3,7 +3,7 @@ include 'conexion.php';
 
 // recibir los datos y almancenarlos en variables
 
-$tipo = $_GET["tipo"];
+$tipo = $_POST["tipo"];
 
 //consulta para insertar
 
