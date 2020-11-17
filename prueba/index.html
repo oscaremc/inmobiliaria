@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Registro de Datos</title>
+      <link rel="stylesheet" href="css/estilosform.css">
+</head>
+<body>
+      <header>
+            <h1>Tabla de Ingreso Datos Inmobiliaria</h1>
+      </header>
+      <section class="contenedor">
+            <form action="regristar.php" metodo="POST">
+
+                  <!--informacion primaria-->
+                  <div class="info__uno">
+                        <!--tipo de inmueble-->
+                        <section class="tipo">
+                        <label for="tipo">Tipo :</label>
+                        <select name="tipo" id="tipo" class="tipoS">
+                          <option value="casa">Casa</option>
+                          <option value="apartamento">Apartamento</option>
+                          <option value="lote">lote</option>
+                          <option value=""></option>
+                        </select>
+                        </section>
+                        
+
+                  </div>
+
+
+                  <div class="boton">
+                        <input type="submit" class="botonS" name="ingresar datos" value="Guardar en la base de datos">
+                  </div>
+            
+            </form>
+      </section>
+</body>
+</html>
