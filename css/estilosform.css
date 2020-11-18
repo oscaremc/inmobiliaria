@@ -7,7 +7,20 @@ header{
       text-align: center;
       padding: 30px;
       margin-top: 30px;
+      justify-content: center;
       background-color: greenyellow;
+      display: flex;
+}
+.botonTabal{
+      border: solid 1px;
+      border-radius: 10px;
+      background-color: honeydew;
+      margin: auto 30px;
+      padding: 10px;
+}
+.botonTabal a{
+      text-decoration: none;
+      color: black;
 }
 .contenedor{
       text-align: center;
@@ -17,10 +30,10 @@ header{
       display: flex;
       justify-content: center;
       padding: 10px;
-      margin: 20px auto;
+      margin: 10px auto;
 }
 .tipo, .sector, .externas, .estracto, .internas, .internas p, .barrio, .antiguedad, .estado, .precio, .metros, .garaje, .habitacion, .banos, .descripcion{
-      margin: auto 40px;
+      margin: auto 10px;
       font-size: 10px;
 }
 .tipoS, .sectorS, .barrioS, .estractoS, .antiguedadS, .estadoS, .precioS, .metrosS, .garajeS, .habitacionS, .banosS{

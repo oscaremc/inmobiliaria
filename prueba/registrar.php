@@ -7,7 +7,7 @@ $tipo = $_POST["tipo"];
 
 //consulta para insertar
 
-$insertar = 'INSERT INTO datos(tipo) VALUES ("$tipo")';
+$insertar = "INSERT INTO datos(tipo) VALUES ('$tipo')";
 
 //ejecutar consulta registrar.php
 
@@ -19,3 +19,4 @@ if ($conexion->query($insertar) === TRUE) {
 
 //cerar conexion 
 mysqli_close($conexion);
+?>

@@ -1,0 +1,22 @@
+*{      margin: 0;
+      padding: 0;
+}
+.cabeceraVisual{
+      border:solid;
+      padding: 10px;
+      margin: 10px auto;
+}
+.contenedorVisual{
+      border: solid;
+}
+.contenedorVisual ul{
+      display: flex;
+      justify-content: center;
+}
+.contenedorVisual li{
+      list-style: none;
+      width: 100px;
+      padding: 5px 10px;
+      border: solid;
+      text-align: center;
+}
