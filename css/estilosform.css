@@ -1,7 +1,7 @@
 *{
       margin: 0;
       padding: 0;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'Courier New', Courier, monospace;
 }
 header{
       text-align: center;
@@ -12,11 +12,11 @@ header{
       display: flex;
 }
 .botonTabal{
-      border: solid 1px;
       border-radius: 10px;
       background-color: honeydew;
       margin: auto 30px;
       padding: 10px;
+      box-shadow: 3px 3px 3px rgb(22, 169, 2);
 }
 .botonTabal a{
       text-decoration: none;
@@ -66,5 +66,54 @@ header{
 }
 .botonS{
       margin-bottom: 90px;
+      box-shadow: 3px 3px 3px rgb(22, 169, 2);
       padding: 10px;
+}
+.comandosIngresa{
+      background-color: greenyellow;
+      display: flex;
+      justify-content: center;
+}
+.comandoSiguiente{
+      border: solid 1px #000;
+      border-radius: 5px;
+      padding: 10px;
+      display: block;
+}
+.boton, .botonSiguienteIngresa{
+      margin: 20px 40px;
+}
+.contenedor__header__hijo{
+      border: solid 3px rgb(230, 230, 230);
+      margin: 5px 30px;
+      background-color: rgb(240, 240, 240);
+}
+.contenedor__header__hijo a{
+      padding: 30px 30px;
+      color: black;
+}
+.cabeceraTablaTres{
+      text-align: center;
+      margin: 20px auto;
+      padding: 10px;     
+}
+.cuerpoTablaTres{
+      margin: auto;
+}
+.cuerpoTablaTres li{
+      display: flex;
+      margin: auto 40px;
+      justify-content: center;
+}
+.cuerpoTablaTres p{
+      margin: auto 40px;
+      background-color: rgb(240, 240, 240);
+      padding: 10px 70px;
+}
+.cuerpoTablaTres input{
+      padding: 10px;
+
+}
+.botonunoHeader{
+      box-shadow: 3px 3px 3px rgb(22, 169, 2);
 }

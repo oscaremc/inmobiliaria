@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ingresa a Base de Datos</title>
+      <link rel="stylesheet" href="css/estilosform.css">
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+
+<script>
+      $(document).ready(function(){
+            $("#botonUno").click(function(){
+                  $("#contenedorInfoGeneral").load("ingresarBase.html");
+            });
+            $("#botonDos").click(function(){
+                  $("#contenedorInfoGeneral").load("tablaDos.html");
+            }); 
+            $("#botonTres").click(function(){
+                  $("#contenedorInfoGeneral").load("tablaTres.html");
+            });            
+      });
+</script>
+<body>
+      <header class="contenedor__header">
+            <div class="contenedor__header__hijo">
+                  <div class="botonunoHeader"><a href="#" id="botonUno">Ingresar Primero</a></div>
+            </div>
+            <div class="contenedor__header__hijo">
+                  <div class="botonunoHeader"><a href="#" id="botonDos">Ingresar Segundo</a></div>
+            </div>
+            <div class="contenedor__header__hijo">
+                  <div class="botonunoHeader"><a href="#" id="botonTres">Ingresar Final</a></div>
+            </div>
+      </header>
+      <section class="contenedorInfo" id="contenedorInfoGeneral"></section>
+</body>
+</html>
